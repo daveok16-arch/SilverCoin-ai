@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SilverCoin AI Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SilverCoin AI Bot</h1>
+        <p class="subtitle">AI-powered financial prediction system</p>
+
+        <div class="section">
+            <h2>Server Status</h2>
+            <button onclick="checkMetrics()">Check Metrics</button>
+            <pre id="metrics-output"></pre>
+        </div>
+
+        <div class="section">
+            <h2>Market Prediction</h2>
+            <select id="pair-select">
+                <option value="EURUSD">EURUSD</option>
+                <option value="GBPUSD">GBPUSD</option>
+                <option value="USDJPY">USDJPY</option>
+                <option value="XAUUSD">XAUUSD</option>
+                <option value="BTCUSD">BTCUSD</option>
+            </select>
+
+            <button onclick="predict()">Predict</button>
+            <pre id="predict-output"></pre>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
