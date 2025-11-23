@@ -1,4 +1,5 @@
-const API_BASE = "https://drunk-votes-military-genetics.trycloudflare.com";
+// Replace this with your new tunnel URL
+const API_BASE = "https://surrounding-permitted-prepare-poor.trycloudflare.com";
 
 async function checkMetrics() {
     const output = document.getElementById("metrics-output");
@@ -9,7 +10,7 @@ async function checkMetrics() {
         const data = await res.json();
         output.innerHTML = JSON.stringify(data, null, 2);
     } catch (e) {
-        output.innerHTML = "Error connecting to backend.";
+        output.innerHTML = "❌ Error: Cannot reach backend.";
     }
 }
 
@@ -23,6 +24,6 @@ async function predict() {
         const data = await res.json();
         output.innerHTML = JSON.stringify(data, null, 2);
     } catch (e) {
-        output.innerHTML = "Error connecting to backend.";
+        output.innerHTML = "❌ Error: Cannot reach backend.";
     }
 }
