@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SilverCoin AI Bot</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,29 +10,30 @@
 
     <div class="container">
         <h1>SilverCoin AI Bot</h1>
-        <p class="subtitle">AI-powered financial prediction system</p>
+        <p class="subtitle">AI-Powered Market Prediction System</p>
 
-        <div class="section">
+        <div class="card">
             <h2>Server Status</h2>
             <button onclick="checkMetrics()">Check Metrics</button>
-            <pre id="metrics-output"></pre>
+            <pre id="metrics-output">Waiting...</pre>
         </div>
 
-        <div class="section">
+        <div class="card">
             <h2>Market Prediction</h2>
+
             <select id="pair-select">
-                <option value="EURUSD">EURUSD</option>
-                <option value="GBPUSD">GBPUSD</option>
-                <option value="USDJPY">USDJPY</option>
-                <option value="XAUUSD">XAUUSD</option>
-                <option value="BTCUSD">BTCUSD</option>
+                <option>EURUSD</option>
+                <option>GBPUSD</option>
+                <option>USDJPY</option>
+                <option>XAUUSD</option>
+                <option>BTCUSD</option>
             </select>
 
             <button onclick="predict()">Predict</button>
-            <pre id="predict-output"></pre>
+            <pre id="predict-output">Waiting...</pre>
         </div>
     </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
